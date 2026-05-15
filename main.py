@@ -30,7 +30,7 @@ REWARDS_POOL = [
 REWARDS_WEIGHTS = [5, 15, 15, 32.5, 32.5]
 
 # Google Sheet Webhook URL
-SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw2qkoK1xDY9uZnRWXso3yjAbK-iV5KOW2IcSyaEPrQlEItfWkPZjQr_elQA2Fz3ZDNwg/exec"
+SCRIPT_URL = ""
 
 # Στοιχεία Υποσέλιδου (Footer)
 LOCATION_TEXT = "Λεωφ. Ελ. Βενιζέλου 142, Ηλιούπολη"
