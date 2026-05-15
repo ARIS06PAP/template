@@ -32,7 +32,7 @@ REWARDS_WEIGHTS = [5, 15, 15, 32.5, 32.5]  # Πιθανότητες κλήρωσ
 
 # 📊 5. PRODUCTION GOOGLE APPS SCRIPT URL
 # Εδώ κάνεις επικόλληση το Web App URL (από το New Deployment) του Sheet που ανήκει στον πελάτη
-SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw2qkoK1xDY9uZnRWXso3yjAbK-iV5KOW2IcSyaEPrQlEItfWkPZjQr_elQA2Fz3ZDNwg/exec"
+SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwZKv1Npiqqj09fyE-6bnxyHOSC-AZR_xwFCoy1ysrgni-4byivQY5ViRmDBcT5GEoW9Q/exec"
 
 
 # ======================================================
