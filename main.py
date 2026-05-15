@@ -15,7 +15,7 @@ import base64
 st.set_page_config(page_title="Coffee Lab Rewards", page_icon="☕", layout="centered")
 
 # 🚨 PRODUCTION GOOGLE APPS SCRIPT URL LOCKED
-SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzZuKYqrFcHMs7W_0W00tSvQjDRe2G5GjYfyj8_MtqJpqxGie2P9Vv43iuOR2t_f8ZLvw/exec"
+SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwsKZHjAg8QSyM3TkKFjU1nmM7rfWxeQxvDmkg1wXYSZanmWkGj_P8MgjsImoOKMm4zBA/exec"
 
 # --- THE ULTIMATE GLOBAL MOBILE RESET & CENTER (CSS INJECT) ---
 st.markdown("""
