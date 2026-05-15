@@ -31,7 +31,7 @@ REWARDS_WEIGHTS = [5, 15, 15, 32.5, 32.5]        # Οι πιθανότητες �
 
 # 📊 5. GOOGLE SHEETS LIVE WEBHOOK URL
 # Εδώ κολλάς το Web App URL που παίρνεις από το New Deployment του εκάστοτε Sheet
-SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyg7kYgqqbu69QA3-oXiCZuG8-f5f2E8GJgU83gAaaQ_t9GgFNr4Osr6bBuOAbggpoLLA/exec"
+SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwsKZHjAg8QSyM3TkKFjU1nmM7rfWxeQxvDmkg1wXYSZanmWkGj_P8MgjsImoOKMm4zBA/exec"
 
 
 # ======================================================
