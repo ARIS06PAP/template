@@ -35,7 +35,6 @@ REWARDS_POOL = [
 REWARDS_WEIGHTS = [5, 15, 15, 32.5, 32.5] 
 
 # 📊 GOOGLE SHEETS DATABASE WEBHOOK
-# Το δικό σου live link περασμένο και έτοιμο
 SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyg7kYgqqbu69QA3-oXiCZuG8-f5f2E8GJgU83gAaaQ_t9GgFNr4Osr6bBuOAbggpoLLA/exec"
 
 # 📍 ΣΤΟΙΧΕΙΑ ΥΠΟΣΕΛΙΔΟΥ (FOOTER INFO)
@@ -245,9 +244,9 @@ else:
                     "Reward": final_reward
                 }
                 
-                # Αποστολή στο Google Script Webhook
+                # Κρίσιμη Διόρθωση: Προσθήκη allow_redirects=True για τη Google
                 try: 
-                    requests.post(SCRIPT_URL, json=payload, timeout=5)
+                    requests.post(SCRIPT_URL, json=payload, allow_redirects=True, timeout=10)
                 except: 
                     pass 
                 
