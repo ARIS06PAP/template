@@ -38,7 +38,7 @@ REWARDS_WEIGHTS = [5, 15, 15, 32.5, 32.5] # Οι πιθανότητες για �
 
 # 📊 GOOGLE SHEETS DATABASE WEBHOOK
 # Εδώ κάνεις επικόλληση το νέο URL που σου δίνει το Google Apps Script όταν στήνεις το καινούργιο Sheet του πελάτη
-SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw2qkoK1xDY9uZnRWXso3yjAbK-iV5KOW2IcSyaEPrQlEItfWkPZjQr_elQA2Fz3ZDNwg/exec"
+SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxDIQ0Iugg5j_7XAw1wx2NVOerhrwoVcCiznF9SyaPTjB1UZGHpalPFsFYLvoQc9K_HGA/exec"
 
 # 📍 ΣΤΟΙΧΕΙΑ ΥΠΟΣΕΛΙΔΟΥ (FOOTER INFO)
 LOCATION_TEXT = "Λεωφ. Ελ. Βενιζέλου 142, Ηλιούπολη" # Η διεύθυνση του καταστήματος
