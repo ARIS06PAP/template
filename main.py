@@ -12,14 +12,20 @@ import base64
 BRAND_NAME = "COFFEE LAB ILIOYPOLI"
 SUBTITLE_TEXT = "SCAN & WIN // OFFICIAL HANDOUT"
 
-# Χρώματα (Hex Codes)
-BG_GRADIENT = "linear-gradient(180deg, #00b4d8 0%, #0077b6 100%)" # Το φόντο
-ACCENT_COLOR = "#00b4d8" # Το χρώμα στα γράμματα του Input
+# 🎨 DESIGN & ΧΡΩΜΑΤΑ
+# ------------------------------------------------------
+BG_GRADIENT = "linear-gradient(180deg, #00b4d8 0%, #0077b6 100%)" 
+ACCENT_COLOR = "#00b4d8" 
 
-# Αρχείο Logo (Πρέπει να είναι στο ίδιο repo στο GitHub)
+# 📐 ΔΙΑΣΤΑΣΕΙΣ & ΕΛΕΓΧΟΣ LOGO (ΠΑΙΞΕ ΜΕ ΑΥΤΕΣ ΤΙΣ ΤΙΜΕΣ)
+# ------------------------------------------------------
 LOGO_FILE = "asset.png" 
+LOGO_WIDTH = "140px"          # <-- Ρυθμίζεις το μέγεθος του logo (π.χ. 120px, 150px, 180px)
+LOGO_TOP_MARGIN = "15px"      # <-- Πόσο ελεύθερο χώρο θέλεις από την κορυφή της οθόνης
+LOGO_BOTTOM_MARGIN = "5px"   # <-- Πόσο ελεύθερο χώρο θέλεις ανάμεσα σε logo και τίτλο
 
-# Δώρα και Πιθανότητες
+# 🎁 ΔΩΡΑ ΚΑΙ ΠΙΘΑΝΟΤΗΤΕΣ
+# ------------------------------------------------------
 REWARDS_POOL = [
     "🎁 1+1 Καφές (Optimization Protocol)",
     "🎁 -20% στην επόμενη παραγγελία",
@@ -29,20 +35,22 @@ REWARDS_POOL = [
 ]
 REWARDS_WEIGHTS = [5, 15, 15, 32.5, 32.5]
 
-# Google Sheet Webhook URL
-SCRIPT_URL = ""
+# 📊 DATABASE WEBHOOK
+# ------------------------------------------------------
+SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw2qkoK1xDY9uZnRWXso3yjAbK-iV5KOW2IcSyaEPrQlEItfWkPZjQr_elQA2Fz3ZDNwg/exec"
 
-# Στοιχεία Υποσέλιδου (Footer)
+# 📍 FOOTER INFO
+# ------------------------------------------------------
 LOCATION_TEXT = "Λεωφ. Ελ. Βενιζέλου 142, Ηλιούπολη"
 HOURS_TEXT = "Καθημερινά 06:00 - 21:00"
 
 # ======================================================
-# 🧬 ENGINE CORE (ΜΗΝ ΑΓΓΙΖΕΙΣ ΑΥΤΟ ΤΟ ΚΟΜΜΑΤΙ - ΦΤΙΑΧΝΕΙ ΤΟ MOBILE UI)
+# 🧬 ENGINE CORE (ΜΗΝ ΑΓΓΙΖΕΙΣ - ΔΙΑΒΑΖΕΙ ΤΙΣ ΠΑΡΑΠΑΝΩ ΤΙΜΕΣ)
 # ======================================================
 
 st.set_page_config(page_title=BRAND_NAME, page_icon="🎯", layout="centered")
 
-# CSS Injection για Mobile Optimization & Απόλυτο Κεντράρισμα
+# CSS Injection με τις δυναμικές μεταβλητές του Logo
 st.markdown(f"""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Share+Tech+Mono&display=swap');
@@ -74,12 +82,12 @@ st.markdown(f"""
         justify-content: center !important;
         align-items: center !important;
         width: 100% !important;
-        margin-top: 5px !important;
-        margin-bottom: 10px !important;
+        margin-top: {LOGO_TOP_MARGIN} !important;       /* Δυναμικό Top Margin */
+        margin-bottom: {LOGO_BOTTOM_MARGIN} !important; /* Δυναμικό Bottom Margin */
     }}
     
     .html-asset-container img {{
-        width: 130px !important;
+        width: {LOGO_WIDTH} !important;                /* Δυναμικό Πλάτος Logo */
         height: auto !important;
         display: block !important;
         filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.15));
