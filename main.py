@@ -14,7 +14,7 @@ APP_BACKGROUND = "linear-gradient(180deg, #00b4d8 0%, #0077b6 100%)"
 INPUT_TEXT_COLOR = "#00b4d8"                                   # Το χρώμα των γραμμάτων όταν ο χρήστης πληκτρολογεί
 
 # 📐 3. ΔΙΑΣΤΑΣΕΙΣ ΚΑΙ ΕΛΕΓΧΟΣ LOGO (PATCH CONTROL)
-LOGO_FILE_NAME = "logolab.png"  # Το όνομα του αρχείου της εικόνας που θα ανεβάζεις στο GitHub
+LOGO_FILE_NAME = "asset.png"  # Το όνομα του αρχείου της εικόνας που θα ανεβάζεις στο GitHub
 LOGO_WIDTH_SIZE = "130px"       # Το πλάτος του logo στην οθόνη του κινητού (π.χ. 120px, 150px, 180px)
 LOGO_TOP_SPACING = "5px"        # Το κενό από την κορυφή της οθόνης μέχρι το logo
 LOGO_BOTTOM_SPACING = "10px"    # Το κενό ανάμεσα στο logo και τον κεντρικό τίτλο
